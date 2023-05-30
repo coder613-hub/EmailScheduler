@@ -1,0 +1,35 @@
+{
+  "timeZone": "America/New_York",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Gmail",
+        "serviceId": "gmail",
+        "version": "v1"
+      }
+    ]
+  },
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "urlFetchWhitelist": [
+    "https://xdk1nsl4ba.execute-api.us-east-1.amazonaws.com/dev"
+  ],
+  "gmail": {
+    "name": "Schedule an Email",
+    "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4d8EqhwO2OIDSJFq40wcYjyWlnsX3xqSQAdLKTlI&s",
+    "contextualTriggers": [
+      {
+        "unconditional": {},
+        "onTriggerFunction": "onHomepageTrigger"
+      }
+    ],
+    "primaryColor": "#8034eb",
+    "secondaryColor": "#2E8B57",
+    "version": "TRUSTED_TESTER_V2"
+  }
+}
